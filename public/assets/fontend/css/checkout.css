@@ -1,0 +1,137 @@
+
+.container{
+  max-width: 1600px;
+  padding: 0 60px;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.shopingbag-icon {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.img-responsive{
+  max-width: 100%;
+}
+.checkout-page-nav{
+  border-bottom: 1px solid #c9c9c9;
+}
+.shopingbag-icon span {
+  position: absolute;
+  font-size: 12px;
+  top: 4px;
+  cursor: pointer;
+}
+.checkout-page-nav li{
+  position: relative;
+}
+.checkout-page-nav li a{
+  font-size: 16px;
+  font-weight: 500;
+}
+.help-link{
+  margin-right: 20px;
+}
+.help-link::before{
+  position: absolute;
+  content: '';
+  background: #777777;
+  width: 1px;
+  height: 22px;
+  top: 11px;
+  right: -10px;
+}
+.payment-options-inner button{
+  display: flex;
+  align-items: center;
+  background: #ffff;
+  border: none;
+  box-shadow: 0px 0px 7px #00000065;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 80px;
+}
+.payment-options-inner button input{
+  margin-right: 7px;
+}
+.delivery-section{
+  position: relative;
+  padding: 40px 0;
+}
+.delivery-title{
+  margin-bottom: 30px;
+}
+.form-group{
+  margin-bottom: 15px;
+}
+.your-order-title{
+  background: #f7f7f7;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.product-info img{
+  height: 90px;
+}
+.stock-status{
+  color: #257f39;
+}
+tfoot>tr>td{
+  border-bottom-width: 0 !important;
+  font-weight: 500;
+}
+.container-fluid.bg-light{
+  padding: 15px 10px;
+  background: #f7f7f7;
+  border-top: 1px solid #e2e2e2;
+}
+.confirm-btn{
+  border-top: 1px solid #b1b1b1;
+  padding-top: 30px;
+}
+.confirm-btn button{
+  background: #007a7a;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+}
+.cashback-offer{
+  line-height: 10px;
+  font-size: 16px;
+  margin-top: -16px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #cf2054;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .payment-button-column{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .container{
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1215px){
+  .cashback-offer{
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 13px;
+  }
+  .payment-options-inner .payment-button-column{
+    padding: 5px;
+  }
+}

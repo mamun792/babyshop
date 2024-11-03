@@ -1,0 +1,348 @@
+
+/* product details page start */
+.product-image-section{
+  padding: 20px;
+  position: relative;
+}
+.product-details-main-section{
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .product-details-main-section .container{
+    width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+  }
+} 
+.product-color span{
+  height: 40px;
+  width: 40px;
+  margin: 4px 7px;
+  display: inline-flex;
+}
+.product-details{
+  padding: 20px 0;
+}
+.product-details h6{
+  font-weight: 500;
+  font-size: 19px;
+}
+.product-details h6 span{
+  font-weight: 400;
+  font-size: 16px;
+}
+.details-text{
+  padding: 0 20px 0 0;
+  text-align: justify;
+  font-weight: 400;
+}
+.card-img{
+  position: relative;
+  overflow: hidden;
+}
+.product-title, .category-title{
+  padding: 5px 10px;
+  text-align: left;
+}
+.category-title h5{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #525252;
+  font-style: italic;
+}
+.product-title h5{
+  font-size: 17px;
+}
+.product-price p{
+  margin: 0;
+  font-size: 14px;
+  text-align: right;
+}
+.product-price p:first-child{
+  font-weight: 600;
+  font-size: 16px;
+}
+.style-and-design ul{
+  padding-left: 20px;
+}
+.style-and-design ul li{
+  list-style: disc;
+  font-size: 16px;
+  font-weight: 400;
+}
+.color-title{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#colorName {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.colors {
+  display: flex;
+  gap: 20px;
+}
+.color-ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+.color-ball.active {
+  border: 3px solid black;
+}
+.blue {
+  background-color: #0080ff;
+}
+
+.green {
+  background-color: #008000;
+}
+
+.grey {
+  background-color: #D3D3D3;
+}
+.red {
+  background-color: #FF0000;
+} 
+.details-page-size select{
+  width: 400px;
+  padding: 6px 6px;
+  border-radius: 50px;
+  margin: 15px 0;
+}
+.get-link{
+  margin: 15px 0;
+}
+.get-link a{
+  border: 1px solid #000000;
+  display: block;
+  width: 400px;
+  padding: 7px 8px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.add-to-bag a{
+  background-color: #007a7a;
+  color: #fff;
+  font-weight: 500;
+  border-color: #007a7a;
+}
+
+.add-favourite a{
+  position: relative;
+}
+.add-favourite .heart-svg{
+  position: absolute;
+  left: 15px !important;
+  right: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  bottom: 0 !important;
+  /* width: 24px;
+  height: 24px; */
+  cursor: pointer;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+  border: none !important;
+}
+#add-favourite svg {
+  width: 24px;
+  height: 24px;
+  
+}
+svg path {
+  transition: fill 0.5s ease-in-out, stroke 0.5s ease-in-out;
+}
+.heart-svg .default {
+  fill: none;
+  stroke: #b4b4b4;
+}
+.heart-svg svg.active {
+  fill: #000000;
+  stroke: #000000;
+  color: red;
+}
+.scrollable-dropdown {
+  width: 100%;
+  height: auto; /* Let it adjust dynamically */
+  max-height: 150px; /* Limit the dropdown height */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  display: block;
+}
+.product-content {
+  overflow: hidden;
+  max-height: 40px;
+  transition: max-height 0.5s ease;
+  text-align: justify;
+}
+.product-content.expanded {
+  max-height: 300px;
+}
+.read-more-btn {
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  float: right;
+}
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+.extra-content ul{
+  padding-left: 18px;
+}
+.extra-content ul li{
+  list-style: disc;
+  margin: 5px 0;
+}
+.content.expanded .extra-content {
+  display: block;
+}
+
+
+.slider-thumb-image{
+  overflow: hidden;
+}
+.slider-thumb-image .demo {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.slider-thumb-image .active,
+.slider-thumb-image .demo:hover {
+opacity: 1;
+}
+.product-image-section .prev,
+.product-image-section .next {
+cursor: pointer;
+position: absolute;
+top: 20px;
+width: auto;
+padding: 7px 12px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border-radius: 3px 0 0 3px;
+user-select: none;
+-webkit-user-select: none;
+background: #8b8c8d;
+}
+ 
+.product-image-section .next {
+right: 67px;
+border-radius: 0 3px 3px 0;
+
+}
+.prev{
+  right: 120px;
+}
+.mySlides{
+  text-align: center;
+}
+.slide-thumb-image{
+  position: absolute;
+  left: 36px;
+  top: 11px; 
+}
+.slider-thumb-image img{
+  height: 80px;
+}
+.slider-thumb-image{
+  margin: 10px 0;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details-slide-title{
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 13px;
+  padding: 10px 0 0 0;
+  margin-bottom: 8px;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+.product-view-price{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #323232;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+}
+
+.snackbar.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.notification {
+  margin-top: 10px;
+  background-color: red; 
+  color: white; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease-in-out;
+}
+
+#notification-area {
+  margin-top: 10px; /* Adjust as needed */
+  font-size: 16px;
+  color: #333;
+}
+
+/*  */

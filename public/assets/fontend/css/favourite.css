@@ -1,0 +1,60 @@
+
+
+.container{
+  max-width: 1600px;
+  padding: 0 25px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 3000px) {
+  .container{
+    padding: 0 60px;
+  }
+}
+
+.img-responsive{
+  max-width: 100%;
+}
+.remove-link{
+  color: #007a7a;
+  font-weight: 500;
+}
+.size-selection select{
+  width: 90%;
+  border-radius: 50px;
+  padding: 5px 8px;
+}
+
+.color-selection select{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 50px;
+  padding: 5px 8px;
+
+}
+.add-to-bag-btn{
+  width: 90%;
+  display: block;
+  background-color: #007a7a;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  padding: 6px;
+}
+.item-details p{
+  margin-bottom: 9px;
+}
+.favourites-section span{
+  font-size: 14px;
+  margin-left: 25px;
+  font-weight: 400;
+}
+
+
+.favourite-item.fade-out {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+/resources
+   /views
+       /layouts
+           app.blade.php
+           admin.blade.php
+       /partials
+           _header.blade.php
+           _footer.blade.php
+           _sidebar.blade.php
+       /components
+           navbar.blade.php
+           alert.blade.php
+       /pages
+           home.blade.php
+           product.blade.php
+           category.blade.php
+           checkout.blade.php
+       /auth
+           login.blade.php
+           register.blade.php
+       /admin
+           dashboard.blade.php
+           orders.blade.php
+           products.blade.php
+              categories.blade.php

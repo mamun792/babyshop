@@ -1,0 +1,82 @@
+.search-input {
+    border-top-left-radius: 25px;  /* Rounded corners on the left side */
+    border-bottom-left-radius: 25px;
+}
+
+.search-button {
+    background: #088178;
+    border-top-right-radius: 25px; /* Rounded corners on the right side */
+    border-bottom-right-radius: 25px;
+    border: none; /* Remove any default button border */
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.time-box {
+    background: #d8f4e2;
+    border-radius: 5px;
+}
+
+.product-price-cover {
+    border: none !important;
+}
+
+table{
+    border: 1px solid white;
+    
+}
+
+table th{
+    border: none !important;
+    border-bottom: 1px solid gainsboro !important;
+}
+
+table td{
+    border: none !important;
+    border-bottom: 1px solid gainsboro !important;
+}
+
+
+
+@media (max-width: 768px) {
+    .time-box {
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+
+    .d-flex.align-items-center.justify-content-start.mt-3 {
+        flex-wrap: wrap; /* Make items wrap on smaller screens */
+        gap: 10px; /* Add space between wrapped items */
+    }
+
+    .col-md-6.p-5 {
+        padding: 15px !important; /* Reduce padding for better responsiveness */
+    }
+    
+    .col-md-8 {
+        padding-top: 10px;
+    }
+
+    .d-flex.align-items-center.justify-content-start.mt-2 {
+        flex-wrap: wrap; /* Allow the pricing info to wrap on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+
+    .d-flex.align-items-center.justify-content-start.mt-3 {
+        flex-wrap: wrap; /* Make items wrap on smaller screens */
+        gap: 10px; /* Add space between wrapped items */
+    }
+
+  
+    .fi-rs-heart.filled {
+        color: red;
+    }
+  
+}
